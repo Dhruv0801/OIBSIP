@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WARCORE Tactical Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="calculator-panel">
+
+      <div class="panel-top">
+        <div class="title-box">
+          <span class="unit-tag">WARCORE // UNIT-07</span>
+          <h1>Tactical Calculator</h1>
+          <p>Battlefield Arithmetic Interface</p>
+        </div>
+
+        <div class="alert-box">
+          <span class="alert-label">STATUS</span>
+          <span id="statusText" class="alert-value">STANDBY</span>
+        </div>
+      </div>
+
+      <div class="display-panel">
+        <div class="scan-line"></div>
+        <div id="historyText" class="history-text">MISSION READY //</div>
+        <div id="mainDisplay" class="main-display">0</div>
+      </div>
+
+      <div class="grid-buttons">
+        <button class="btn control" data-type="clear">RESET</button>
+        <button class="btn control" data-type="delete">CUT</button>
+        <button class="btn operator" data-type="operator" data-value="/">DIV</button>
+        <button class="btn operator" data-type="operator" data-value="*">MUL</button>
+
+        <button class="btn number" data-type="number" data-value="7">7</button>
+        <button class="btn number" data-type="number" data-value="8">8</button>
+        <button class="btn number" data-type="number" data-value="9">9</button>
+        <button class="btn operator" data-type="operator" data-value="-">SUB</button>
+
+        <button class="btn number" data-type="number" data-value="4">4</button>
+        <button class="btn number" data-type="number" data-value="5">5</button>
+        <button class="btn number" data-type="number" data-value="6">6</button>
+        <button class="btn operator" data-type="operator" data-value="+">ADD</button>
+
+        <button class="btn number" data-type="number" data-value="1">1</button>
+        <button class="btn number" data-type="number" data-value="2">2</button>
+        <button class="btn number" data-type="number" data-value="3">3</button>
+        <button class="btn equal" data-type="equal">FIRE</button>
+
+        <button class="btn zero number" data-type="number" data-value="0">0</button>
+        <button class="btn number" data-type="decimal" data-value=".">.</button>
+      </div>
+
+      <div class="bottom-strip">
+        <div class="strip-box">MODE: BASIC OPS</div>
+        <div class="strip-box">ENGINE: SAFE DIVISION</div>
+        <div class="strip-box">CHAIN: ACTIVE</div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
